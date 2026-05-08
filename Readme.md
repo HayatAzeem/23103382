@@ -2,7 +2,7 @@
 
 ## Output
 
-![Campus Notification System Output](./output/image.png)
+![Campus Notification System Output](./output/image1.png)
 
 ## Repository Structure
 
