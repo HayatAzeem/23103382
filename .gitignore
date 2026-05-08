@@ -1,0 +1,5 @@
+.env
+node_modules/
+logging_middleware/dist/
+notification_app_be/dist/
+*.log

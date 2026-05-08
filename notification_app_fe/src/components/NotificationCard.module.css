@@ -1,0 +1,113 @@
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 20px;
+  cursor: default;
+  transition: var(--transition);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  opacity: 0; /* starts hidden, revealed by fade-in-up */
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-2px);
+}
+
+/* Subtle glow on hover per type */
+.typePlacement:hover {
+  box-shadow: var(--shadow-card-hover), 0 0 0 1px rgba(79, 140, 255, 0.1);
+}
+.typeResult:hover {
+  box-shadow: var(--shadow-card-hover), 0 0 0 1px rgba(168, 85, 247, 0.1);
+}
+.typeEvent:hover {
+  box-shadow: var(--shadow-card-hover), 0 0 0 1px rgba(34, 211, 165, 0.1);
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.typeBadge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 11px;
+  border-radius: var(--radius-badge);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border: 1px solid transparent;
+}
+
+.badgePlacement {
+  background: var(--badge-placement-bg);
+  color: var(--badge-placement-text);
+  border-color: var(--badge-placement-border);
+}
+
+.badgeResult {
+  background: var(--badge-result-bg);
+  color: var(--badge-result-text);
+  border-color: var(--badge-result-border);
+}
+
+.badgeEvent {
+  background: var(--badge-event-bg);
+  color: var(--badge-event-text);
+  border-color: var(--badge-event-border);
+}
+
+.typeIcon {
+  display: flex;
+  align-items: center;
+}
+
+.timestamp {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.message {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  font-weight: 400;
+  flex: 1;
+}
+
+.cardFooter {
+  margin-top: auto;
+}
+
+.accentLine {
+  height: 2px;
+  border-radius: 2px;
+  width: 40px;
+  opacity: 0.5;
+}
+
+.linePlacement {
+  background: var(--accent-blue);
+}
+
+.lineResult {
+  background: var(--accent-purple);
+}
+
+.lineEvent {
+  background: var(--accent-green);
+}

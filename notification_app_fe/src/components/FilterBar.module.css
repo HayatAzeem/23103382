@@ -1,0 +1,83 @@
+.filterBar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filterBtn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 16px;
+  border-radius: 50px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.filterBtn:hover {
+  border-color: var(--border-hover);
+  color: var(--text-primary);
+  background: var(--bg-card-hover);
+}
+
+.filterLabel {
+  line-height: 1;
+}
+
+.filterCount {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 50px;
+  background: rgba(255,255,255,0.08);
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+/* Active states per type */
+.active.filterAll {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: var(--text-primary);
+}
+.active.filterAll .filterCount {
+  background: rgba(255,255,255,0.15);
+  color: var(--text-primary);
+}
+
+.active.filterPlacement {
+  background: var(--badge-placement-bg);
+  border-color: var(--badge-placement-border);
+  color: var(--badge-placement-text);
+}
+.active.filterPlacement .filterCount {
+  background: var(--badge-placement-border);
+  color: var(--badge-placement-text);
+}
+
+.active.filterResult {
+  background: var(--badge-result-bg);
+  border-color: var(--badge-result-border);
+  color: var(--badge-result-text);
+}
+.active.filterResult .filterCount {
+  background: var(--badge-result-border);
+  color: var(--badge-result-text);
+}
+
+.active.filterEvent {
+  background: var(--badge-event-bg);
+  border-color: var(--badge-event-border);
+  color: var(--badge-event-text);
+}
+.active.filterEvent .filterCount {
+  background: var(--badge-event-border);
+  color: var(--badge-event-text);
+}
